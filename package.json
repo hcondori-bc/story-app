@@ -7,7 +7,9 @@
     "start": "webpack-dev-server",
     "build": "webpack --mode production",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook docs"
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages",
+    "storybook:deploy": "yarn build-storybook && yarn deploy-storybook --existing-output-dir=./storybook-static"
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",
@@ -20,6 +22,7 @@
     "@storybook/builder-webpack5": "^6.5.6",
     "@storybook/manager-webpack5": "^6.5.6",
     "@storybook/react": "^6.5.6",
+    "@storybook/storybook-deployer": "^2.8.11",
     "@storybook/testing-library": "^0.0.11",
     "babel-loader": "^8.2.5",
     "webpack": "^5.73.0",

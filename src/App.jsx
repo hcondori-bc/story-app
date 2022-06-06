@@ -5,7 +5,7 @@ const App = () => {
   console.log("asdasd")
   return (
     <div>
-      <h2>App component!</h2>
+      <h2>App component! v1</h2>
     </div>
   );
 };
